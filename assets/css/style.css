@@ -11643,7 +11643,20 @@ code {
   border-right: 1px solid #ebedf2; }
   .card-statistics .card-col:last-child {
     border-right: none; }
-  @media (max-width: 575.98px) {
+  /* Mobile view */
+  @media (max-width:463px) {
+    .forms-sample .form-row{
+      background-color: #000;
+      width: auto;
+      height: auto;
+      content: '';
+      display: flex;
+      clear: both;
+      flex-direction: row;
+      justify-content: stretch;
+    }
+  }
+  @media (max-width: 575.98px) { 
     .card-statistics .card-col {
       padding-left: 0;
       padding-right: 0;
