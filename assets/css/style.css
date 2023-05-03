@@ -3930,12 +3930,52 @@ textarea.form-control-lg {
   text-align: center;
   margin-top: 25px;
 }
+/* Mobile view 367px */
 @media (max-width: 730px) {
-  .container .cover {
+  .row img{
     display: none;
   }
-  .form-content .login-form {
+  .row{
+    display: flex;
+    content: '';
+    clear: both;
+    position: relative;
+  }
+  .row .stretch-card{
+    width: 167px;
+    height: auto;
+    overflow: hidden;
+  }
+ .row .grid-margin {
+    margin:0px;
+    padding: 4px;
+  }
+  .row .stretch-card .fs-5{
+    font-size: 12px;
+    font-weight: 900;
+  }
+  .row .stretch-card h6{
+    font-size: 12px;
+  }
+  .row .stretch-card>.mdi{
+    font-size: 20vh;
+    content: '';
+    display:inline-flex;
+    clear: both;
+    overflow: hidden;
+  }
+  .report{
+    display: flex;
+    content: '';
+    clear: both;
     width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .report .row .stretch-card{
+    width: 100%;
+    margin-top: 5%;
   }
 }
 .form-range {
