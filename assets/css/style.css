@@ -3842,10 +3842,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.form-content .login-form{
-  width: calc(100% / 2 - 25px);
 }
 .forms .form-content .title {
   position: relative;
@@ -3872,10 +3869,11 @@ textarea.form-control-lg {
   width: 100%;
   margin: 10px 0;
   position: relative;
+  
 }
 .form-content .input-box input {
   height: 100%;
-  width: 100%;
+  width: 70vh;
   outline: none;
   border: none;
   padding: 0 30px;
