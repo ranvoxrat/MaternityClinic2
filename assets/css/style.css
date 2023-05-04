@@ -3837,106 +3837,134 @@ textarea.form-control-lg {
       margin-bottom: 15px;
     }
     /* Staff Info */
+    .main-panel .container{
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+      background: #fff;
+      padding: 40px 30px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      perspective: 2700px;
+    }
+    .container .forms {
+      height: 100%;
+      width: 100%;
+      background: #fff;
+    }
     
-.main-panel .form-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-.forms .form-content .title {
-  position: relative;
-  font-size: 24px;
-  font-weight: 500;
-  color: #333;
-}
-.forms .form-content .title:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 25px;
-  background: var(--bs-green);
-}
-.forms .form-content .input-boxes {
-  margin-top: 30px;
-}
-.forms .form-content .input-box {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-  margin: 10px 0;
-  position: relative;
-  
-}
-.form-content .input-box input {
-  height: 100%;
-  width: 70vh;
-  outline: none;
-  border: none;
-  padding: 0 30px;
-  font-size: 16px;
-  font-weight: 500;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-/* .form-content .input-box input:focus,
-.form-content .input-box input:valid {
-  border-color: var(--bs-green);
-} */
-.form-content .input-box i {
-  position: absolute;
-  color: var(--bs-green);
-  font-size: 17px;
-}
-.forms .form-content .text {
-  font-size: 14px;
-  font-weight: 500;
-  color: #cac6c6;
-}
-.forms .form-content .text a {
-  text-decoration: none;
-}
-.forms .form-content .text a:hover {
-  text-decoration: underline;
-}
-.forms .form-content .button {
-  color: #fff;
-  margin-top: 40px;
-}
-.forms .form-content .button input {
-  color: #fff;
-  background-image: linear-gradient(rgb(0, 73, 73), rgb(2, 37, 21));
-  border-radius: 6px;
-  padding: 0;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.forms .form-content .button input:hover {
-  background-image: linear-gradient(rgb(11, 196, 196), rgb(2, 37, 21));
-}
-.forms .form-content label {
-  color: var(--bs-green);
-  cursor: pointer;
-}
-.forms .form-content label:hover {
-  text-decoration: underline;
-}
-.forms .form-content .login-text {
-  text-align: center;
-  margin-top: 25px;
-}
-.row>.stretch-card:hover{
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: scale(2,2);
-  transition:ease 0.6s;
-  z-index: 12;
-}
+    .main-panel .container .form-content{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+    .main-panel .form-content .maincon{
+      width: 100%;
+      height: auto;
+    }
+    .main-panel .forms .form-content .title{
+      position:relative;
+      font-size: 24px;
+      font-weight: 500;
+      color: #000;
+    }
+    .main-panel .forms .form-content .title::before{
+      content: '';
+      position: absolute;
+      clear: both;
+      left:0;
+      bottom: 0;
+      height: 3px;
+      width: 25px;
+      background: var(--bs-green);
+    }
+    .main-panel .forms .form-content .input-boxes{
+      display:flex;
+      position: relative;
+      content: '';
+      clear: both;
+    }
+    .main-panel .forms .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 40%;
+    margin: 10px 0;
+    position: relative;
+    
+   }
+   .main-panel .form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+   }
+   .main-panel .form-content .input-box input:focus,
+   .main-panel .form-content .input-box input:valid{
+    border-color: var(--bs-success);
+   }
+   .main-panel .form-content .input-box i{
+    position: absolute;
+    color:var(--bs-success);
+    font-size: 17px;
+   }
+   .main-panel .form .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+   }
+   .forms .form-content .text a {
+    text-decoration: none;
+  }
+  .forms .form-content .text a:hover {
+    text-decoration: underline;
+  }
+  .forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+  }
+  .forms .form-content .button input {
+    color: #fff;
+    background-image: linear-gradient(rgb(0, 73, 73), rgb(2, 37, 21));
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .form-content .input-box i {
+    position: absolute;
+    color: var(--bs-green);
+    font-size: 17px;
+  }
+  .forms .form-content .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  .forms .form-content .text a {
+    text-decoration: none;
+  }
+  .forms .form-content .text a:hover {
+    text-decoration: underline;
+  }
+  /* Staff in mobile */
+  @media (max-width:480px) {
+      .maincon .input-boxes{
+        display: flex !important;
+        flex-direction: column !important;
+        position: inherit;
+      }
+      .maincon .input-boxes .input-box input{
+        width: 100vh;
+      }
+      .maincon .input-boxes .input-box input .form-check-input[type="date"]{
+        width: 100vh;
+      }
+  }
 /* Mobile view 367px */
 @media (max-width: 830px) {
   .row img{
@@ -14358,6 +14386,12 @@ dl {
           height: auto; }
         .sidebar .nav .nav-item.sidebar-actions:hover {
           background: initial; }
+          /* .sidebar .nav .nav-item:hover{
+            color:white;
+            background-color: var(--bs-success);
+            transition: all 0.5s;
+            
+          } */
           .sidebar .nav .nav-item.sidebar-actions:hover .nav-link {
             color: initial; }
     .sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-category):not(.nav-profile) > .nav-link {
